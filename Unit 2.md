@@ -285,7 +285,7 @@ We first need to visualize the array as a complete binary tree. For an array of 
 ![image](https://github.com/user-attachments/assets/0fd15db5-d95b-4d2b-9591-cc4e5c17fed9)
 
 
-![alt text](image-22.png)![image](https://github.com/user-attachments/assets/93389e8b-a3a0-47df-8c7e-eb04e8e05f0e)
+![image](https://github.com/user-attachments/assets/93389e8b-a3a0-47df-8c7e-eb04e8e05f0e)
 
 ### Algorithm
 
