@@ -2,7 +2,8 @@
 
 ## Heap
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/704bdd8f-0c84-45ff-9398-698b24b46b0c)
+
 ### Complete Binary Tree vs Almost Complete Binary Tree
 * A complete binary tree has all levels fully filled except possibly the last, with nodes as far left as possible.
 * An almost complete binary tree allows each node to have 0 or 2 children, with the last level potentially having nodes with 0 or 1 child.
@@ -39,7 +40,8 @@ Formula to tree
 ```
 
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/0ef21b0a-c9f2-45b5-b9e6-c133913c7132)
+
 
 ---
 
@@ -48,18 +50,22 @@ Formula to tree
 
 #### Min heap
 
-![Min Heap Image](image-2.png)
+![image](https://github.com/user-attachments/assets/269ab4c2-2f47-41ba-91e7-fe1f36e5eaf5)
+
 
 A min heap is a complete binary tree in which each node is smaller than its children, used for efficient sorting and priority queuing.
 
 #### Max heap
 
-![Max Heap Image](image-3.png)
+![image](https://github.com/user-attachments/assets/39ed68cb-4012-4211-aaa9-b587c63ac047)
+
+
 
 A max heap is a complete binary tree in which each node is greater than its children, used for efficient sorting and priority queuing.
 
 
-![Both Types](image-4.png)
+![image](https://github.com/user-attachments/assets/155b6d18-b930-4b20-8dbb-5776ae106ce1)
+
 
 #### Difference between Min Heap and Max Heap
 
@@ -73,7 +79,8 @@ A max heap is a complete binary tree in which each node is greater than its chil
 
 ## Max Heapify Algorithm
 
-![Process of Max Heapify](image-5.png)
+![image](https://github.com/user-attachments/assets/1957f2e0-7202-4c25-9f90-9a93667c472a)
+
 
 ### Algorithm
 
@@ -104,7 +111,7 @@ MaxHeapify(A, i)
 
 ***In a pic form for personal use***
 
-![Algo Pic](image-6.png)
+![image](https://github.com/user-attachments/assets/695d0767-d9d6-43e1-93b0-d541e692c96d)
 ---
 **For heap extract maximum**
 
@@ -182,7 +189,8 @@ MinHeapify(A, i)
 ``` 
 ***In a pic form for personal use***
 
-![Algo Pic](image-7.png)
+![image](https://github.com/user-attachments/assets/4757a59c-a1ef-429f-834a-c6f1dabee534)
+
 
 ---
 
@@ -237,39 +245,48 @@ heap_insert(A, key)
 
 We first need to visualize the array as a complete binary tree. For an array of size n, the root is at index 0, the left child of an element at index `i` is at `2i + 1`, and the right child is at `2i + 2`.
 
-![alt text](image-9.png)
+![image](https://github.com/user-attachments/assets/d90baaa0-d562-4597-b273-6d82247ba66a)
+
 
 ### Step 2: Build a Max Heap
 
-![alt text](image-10.png)
+![image](https://github.com/user-attachments/assets/5e86f7f5-7768-4c2f-afe0-e3ef703af76e)
 
-![alt text](image-11.png)
 
-![alt text](image-12.png)
+![image](https://github.com/user-attachments/assets/2f2c7147-eb7a-4192-866a-7d4d8b3137ca)
 
-![alt text](image-13.png)
 
-![alt text](image-14.png)
+![image](https://github.com/user-attachments/assets/7199df50-97c7-49b6-be15-acfafd0b6f31)
 
-![alt text](image-15.png)
 
-![alt text](image-16.png)
+![image](https://github.com/user-attachments/assets/6f3a9a4d-b63e-4981-9fde-e5e5c0907f93)
+
+
+![image](https://github.com/user-attachments/assets/984a261d-78b2-4e27-be5c-fcc70c7c8946)
+
+
+![image](https://github.com/user-attachments/assets/6aaf64d2-338a-4fed-b169-bece5e28a7e8)
+
+
+![image](https://github.com/user-attachments/assets/e5fb22bb-e476-46f9-a469-c879943be64c)
+
 
 ### Step 3: Sort the array by placing largest element at end of unsorted array.
 
-![alt text](image-17.png)
+![image](https://github.com/user-attachments/assets/70fd1ea6-0827-4e97-921c-03d22151ace2)
 
-![alt text](image-18.png)
+![image](https://github.com/user-attachments/assets/1addac3f-d35b-47df-8528-c524cee6775f)
 
-![alt text](image-19.png)
+![image](https://github.com/user-attachments/assets/379fbe91-e12a-4beb-871a-12bcf6de2439)
 
-![alt text](image-20.png)
 
-![alt text](image-21.png)
+![image](https://github.com/user-attachments/assets/fcb90ba9-7571-40bd-8c09-8e1f078cc6c4)
 
-![alt text](image-22.png)
+![image](https://github.com/user-attachments/assets/0fd15db5-d95b-4d2b-9591-cc4e5c17fed9)
 
----
+
+![alt text](image-22.png)![image](https://github.com/user-attachments/assets/93389e8b-a3a0-47df-8c7e-eb04e8e05f0e)
+
 ### Algorithm
 
 ```bash
@@ -316,7 +333,8 @@ Continue this process until the array is sorted.
 | O(nlogn) | O(1) |
 
 ---
-![alt text](image-24.png)
+![image](https://github.com/user-attachments/assets/e60a9e44-68b7-4594-9503-7aa9b68007f0)
+
 
 ## Priority Queue
 
@@ -329,7 +347,7 @@ Example with metaphors:
 
 In summary, priority queues are useful for scheduling tasks or events based on their priority, and they can be implemented using a heap data structure.
 
-![alt text](image-23.png)
+![image](https://github.com/user-attachments/assets/12fb1211-7357-4cc6-a443-a7c50cc62d76)
 
 ### Working on these Topics
 
@@ -365,7 +383,9 @@ Binomial tree is a tree in which the degree of each node is equal to the number 
 ---
 ### Example of binomial tree
 
-![alt text](image-26.png)
+![image](https://github.com/user-attachments/assets/1679d945-8adb-41ca-82fa-9e2f2e4a387d)
+
+
 ```
 B1 = B0 + B0
 B2 = B1 + B1
@@ -393,7 +413,8 @@ $$
 
 ### Binomial Heap
 
-![alt text](image-29.png)
+![image](https://github.com/user-attachments/assets/1f416a10-1ca2-4a07-9183-474929dd8df8)
+
 
 Binomial heap is a collection of binomial trees that satisfy the following properties:
 
@@ -426,6 +447,7 @@ Which is 15
 
 ### Stucture of Binomial Heap
 
-![alt text](image-30.png)
+![image](https://github.com/user-attachments/assets/080abfc8-98e8-45c5-ba6f-51d756399646)
+
 
 ---
