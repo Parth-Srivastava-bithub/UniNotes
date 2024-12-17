@@ -314,6 +314,16 @@ Imagine reading a book where each page (input) affects your understanding of the
 - Can learn from **previous data** to make better predictions about **future data**.
 
   
+Here's a table comparing the three neural network architectures:
+
+| **Architecture**                | **Structure**                                           | **Key Feature**                                | **Best For**                                          | **Example**                                                |
+|----------------------------------|---------------------------------------------------------|------------------------------------------------|------------------------------------------------------|------------------------------------------------------------|
+| **Single-Layer Neural Network**  | 2 layers: Input Layer & Output Layer                    | Simple, no hidden layers                       | Linearly separable problems                           | Classifying data that can be separated by a straight line   |
+| **Multi-Layer Feedforward Network** | 3 layers: Input Layer, Hidden Layers, Output Layer    | Hidden layers to solve complex, non-linear problems | Image recognition, speech processing, NLP, etc.       | Classifying handwritten digits (0–9)                       |
+| **Recurrent Neural Network (RNN)** | Input Layer, Hidden State with feedback loops, Output Layer | Feedback loops for sequential data            | Time series forecasting, speech recognition, text processing | Predicting stock prices based on past values or understanding sentences in text |
+
+This table outlines the differences in structure, key features, and applications of the different types of neural network architectures.
+
 
 ### **Visual Representation**:  
 
