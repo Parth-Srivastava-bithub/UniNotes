@@ -17,11 +17,12 @@ Here's a simple ASCII visualization:
     |           |           |           |
    Solve       Solve       Solve       Solve
     |           |           |           |
-     -------------------------
+    -------------------------------------
                 |
              Combine
                 |
              Final Solution
+```       Final Solution
 ```
 
 - **Divide**: Break the problem into smaller subproblems.
