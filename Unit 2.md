@@ -545,7 +545,7 @@ To insert a node into a binomial min heap:
 
 
 
-## Extractint the Minimum from Binomial Heap
+## Extracting the Minimum from Binomial Heap
 ---
 
 ### Steps to Extract the Minimum from a Binomial Heap:
@@ -565,7 +565,7 @@ To insert a node into a binomial min heap:
 - Each root is the smallest value in its respective binomial tree.  
 - The global minimum is guaranteed to be one of the roots, so we don’t need to look deeper.
 
-This image can explain very well
+This image explains very well
 ![image](https://github.com/user-attachments/assets/7f7e085d-b929-490e-bdc0-e81d18bef8f9)
 
 **Get Min -> break the tree -> reverse join -> get two b heaps -> merge them**
@@ -631,6 +631,9 @@ Here’s a comparison table for **Binary Heap**, **Binomial Heap**, and **Fibona
 3. **Fibonacci Heap**:
    - Best for applications requiring frequent **decrease-key** and **union** operations (e.g., Dijkstra’s or Prim’s algorithm).
    - More complex to implement due to lazy consolidation and amortized analysis.
-
-
 ---
+
+## Fibonacci Heap
+![image](https://github.com/user-attachments/assets/dea9372b-59f1-4b4a-9eaa-ba92424dd739)
+
+Notes Are Coming...
