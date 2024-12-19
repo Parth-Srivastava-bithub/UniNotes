@@ -451,3 +451,186 @@ Which is 15
 
 
 ---
+
+### Properties of a Binomial Heap:
+1. **Combination of Binomial Trees**:  
+   A binomial heap is made up of **binomial trees**, each following the structure of a binomial tree \(B_k\) (where \(B_k\) has \(2^k\) nodes and height \(k\)).
+
+2. **Degrees in Increasing Order**:  
+   The binomial trees are arranged in **increasing order of degree** (left to right).
+
+   **ASCII Art Example**:  
+   ```
+   B0 → B1 → B3
+   (1 node)  (3 nodes)  (8 nodes)
+   ```
+
+3. **At Most One Tree Per Degree**:  
+   In a valid binomial heap, there is at most **one tree for each degree**.
+
+4. **Heap Property**:  
+   - Each binomial tree follows the **min-heap property**: The key of the parent node is smaller than or equal to its child nodes.
+
+5. **Binary Representation Connection**:  
+   The structure of a binomial heap corresponds to the binary representation of its size \(n\).  
+   - Example: If \(n = 13\) (binary: 1101), the heap will contain trees \(B0, B2, B3\).
+
+
+## Binomial Heap Union Operation
+![image](https://github.com/user-attachments/assets/327e3d9c-6f00-4d4b-a09b-6e25851cd87e)
+
+This explanation relates to how we merge trees of the same degree during the **union operation** in a binomial heap:
+
+---
+
+### **Let’s break it down:**
+
+1. **Terms**:  
+   - \(x\): Current tree we are working with.
+   - \(n - x\): Next tree of the same degree in the sequence.
+   - \(s - n - x\): The tree after these two.
+
+2. **Rule for Merging:**
+   - If the first two trees (\(x\) and \(n - x\)) have the **same degree** but the third one (\(s - n - x\)) has a different degree:
+     - **Merge the first two** trees. 
+     - Add the smaller root of \(x\) and \(n - x\) as the parent of the larger root.
+
+   - If all three trees have the **same degree**, we cannot merge just the first two. In this case:
+     - **Carry over the merge** by promoting the degree of all three trees (increment their position).
+
+---
+
+### **How this works during merging:**
+- Start by comparing consecutive trees in the merged heap list:
+  - If the **first two degrees match**:
+    - Merge them.
+    - Check the degree of the resulting merged tree with the next tree.
+  - If **three consecutive trees have the same degree**, skip merging for now and continue incrementing degrees until they can be resolved.
+
+---
+
+### **Example in Action**:
+#### Case 1: First two degrees match, third is different:
+Trees: \(B2, B2, B3\)  
+- Merge the first two \(B2\) trees into a \(B3\).  
+- The resulting heap has \(B3, B3\).
+
+#### Case 2: All three have the same degree:
+Trees: \(B2, B2, B2\)  
+- Merge the first two into a \(B3\).  
+- Now, \(B3, B2\) still exists, so increment the position to maintain balance.
+
+---
+
+### **Why this works:**
+This ensures:
+- The heap maintains at most **one tree per degree**.
+- Merging and balancing are efficient while preserving the **binomial heap properties**.
+
+
+---
+
+## Inserting a node into Binomial min heap
+
+To insert a node into a binomial min heap:
+
+1. **Create a new heap \( h' \)** with just the new node.
+2. **Union** \( h \) and \( h' \): Merge the two heaps, linking trees of the same order and maintaining the min-heap property.
+![image](https://github.com/user-attachments/assets/b36139a0-9f40-4281-9280-f94fa8130dd4)
+
+
+
+### Visit this link for better understanding 
+[Video Link for Better understanding](https://www.youtube.com/watchv=skBDWOxSDl8&list=PL1QH9gyQXfgs7foRxIbIH8wmJyDh5QzAm&index=67&pp=iAQB)
+
+
+
+## Extractint the Minimum from Binomial Heap
+---
+
+### Steps to Extract the Minimum from a Binomial Heap:
+
+1. **Find the Minimum Root**:  
+   Look at the roots of all binomial trees in the heap. Since the minimum of each tree is at its root, the smallest root is the global minimum.
+
+2. **Remove the Minimum Root**:  
+   Remove the binomial tree with the smallest root from the heap. Break the tree into its smaller subtrees (if it’s \( B_k \), the subtrees will be \( B_{k-1}, B_{k-2}, ..., B_0 \)).
+
+3. **Reinsert the Subtrees**:  
+   Treat the remaining subtrees as a new binomial heap. Merge this heap with the rest of the original heap.
+
+---
+
+### Why Check Roots Only?  
+- Each root is the smallest value in its respective binomial tree.  
+- The global minimum is guaranteed to be one of the roots, so we don’t need to look deeper.
+
+This image can explain very well
+![image](https://github.com/user-attachments/assets/7f7e085d-b929-490e-bdc0-e81d18bef8f9)
+
+**Get Min -> break the tree -> reverse join -> get two b heaps -> merge them**
+
+
+## Deletion of element in Binomial Heap
+
+Going over **deletion in a binomial min-heap** step by step. The key idea is that when deleting a node, we maintain the **min-heap property** by replacing it with the minimum possible value.
+
+---
+
+### Steps for Deletion:
+
+#### 1. **Decrease the Key of the Node to \(-\infty\)**:
+   - First, replace the value of the node to be deleted with \(-\infty\) (a value smaller than any other in the heap).
+   - Why? This ensures the node "bubbles up" to the root of its binomial tree because it’s now the smallest element.
+
+#### 2. **Extract the Minimum**:
+   - Since the node has been replaced with \(-\infty\), it will now be the **minimum element in the heap**.
+   - Perform the **Extract Min** operation to remove this node (already explained earlier):
+     - Break the tree containing the minimum node into smaller subtrees.
+     - Merge these subtrees back into the heap.
+
+---
+
+### Why Replace with Minimum?  
+The **min-heap property** requires that each parent node is smaller than its children. By replacing the node with \(-\infty\), we ensure:
+- It becomes the minimum and moves to the root of its tree.
+- Extracting it is straightforward, maintaining the heap structure.
+
+This approach avoids direct deletion, which would otherwise require complex adjustments to preserve the min-heap structure.
+
+### Cycle to remember
+**Replace with \(-\infty\) → Bubble up to root → Remove the root → Break the tree → Reverse subtrees → Merge back into heap.**
+
+## Comparison
+Here’s a comparison table for **Binary Heap**, **Binomial Heap**, and **Fibonacci Heap** in terms of their properties and time complexities:
+
+| **Operation**           | **Binary Heap**      | **Binomial Heap**          | **Fibonacci Heap**        |
+|--------------------------|----------------------|----------------------------|---------------------------|
+| **Structure**           | Complete binary tree | Collection of binomial trees | Collection of trees (unordered) |
+| **Insert**              | \( O(\log n) \)     | \( O(\log n) \)            | \( O(1) \) (amortized)   |
+| **Find Minimum**        | \( O(1) \)          | \( O(\log n) \)            | \( O(1) \)               |
+| **Extract Minimum**     | \( O(\log n) \)     | \( O(\log n) \)            | \( O(\log n) \) (amortized) |
+| **Union (Merge)**       | \( O(n) \)          | \( O(\log n) \)            | \( O(1) \) (amortized)   |
+| **Decrease Key**        | \( O(\log n) \)     | \( O(\log n) \)            | \( O(1) \) (amortized)   |
+| **Delete**              | \( O(\log n) \)     | \( O(\log n) \)            | \( O(\log n) \) (amortized) |
+| **Memory Usage**        | Moderate            | Moderate                   | High                     |
+
+---
+
+**Amortized analysis** is a way of averaging the time complexity of operations over a series, where expensive operations are offset by cheaper ones, resulting in a lower average cost per operation.
+
+### Notes:
+1. **Binary Heap**:
+   - Simple to implement and efficient for most use cases.
+   - Does not support efficient merging of heaps.
+
+2. **Binomial Heap**:
+   - Supports heap merging efficiently.
+   - Slightly slower than binary heap for individual operations like insert and delete.
+
+3. **Fibonacci Heap**:
+   - Best for applications requiring frequent **decrease-key** and **union** operations (e.g., Dijkstra’s or Prim’s algorithm).
+   - More complex to implement due to lazy consolidation and amortized analysis.
+
+
+---
