@@ -644,4 +644,14 @@ Here’s a comparison table for **Binary Heap**, **Binomial Heap**, and **Fibona
 ## Fibonacci Heap
 ![image](https://github.com/user-attachments/assets/dea9372b-59f1-4b4a-9eaa-ba92424dd739)
 
+## Theorems
+
+---
+
+### 1. Proof height of Red Black Tree is atmost 2 Log (n + 1) where n is count of total internal nodes
+
+![image](https://github.com/user-attachments/assets/01817ad7-f3b9-42d5-9c65-62b9ca82ee4e)
+
+---
+
 
