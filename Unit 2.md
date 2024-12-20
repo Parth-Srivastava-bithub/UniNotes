@@ -1,4 +1,12 @@
 # Unit 2 Solutions
+Here’s the list of topics for **Advanced Data Structures**:
+
+1. **Red-Black Trees**  Coming soon
+2. **B-Trees**  
+3. **Binomial Heaps**  
+4. **Fibonacci Heaps**  
+5. **Tries**  
+6. **Skip Lists**  
 
 ## Heap
 
