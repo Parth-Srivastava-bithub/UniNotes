@@ -11,8 +11,6 @@
 | - Insertion            |              |               |
 | - Deletion             |              |               |
 | - Searching            |              |               |
-| - Splitting Nodes      |              |               |
-| - Merging Nodes        |              |               |
 | - Properties of B-Trees (Order, Balance) |       |               |
 | - Applications (e.g., Databases, File Systems) |   |               |
 | **Binomial Heaps**     |              |               |
@@ -22,7 +20,6 @@
 | - Union (Merge Heaps)  |              |               |
 | - Extract Minimum      |              |               |
 | - Decrease Key         |              |               |
-| - Structure Properties and Representation |       |               |
 | **Fibonacci Heaps**    |              |               |
 | - Insertion            |              |               |
 | - Deletion             |              |               |
@@ -30,8 +27,6 @@
 | - Union (Merge Heaps)  |              |               |
 | - Extract Minimum      |              |               |
 | - Decrease Key         |              |               |
-| - Consolidation and Degree Properties |              |               |
-| - Applications (e.g., Dijkstra’s Algorithm, Prim’s Algorithm) | |               |
 | **Tries**              |              |               |
 | - Insertion            |              |               |
 | - Deletion             |              |               |
