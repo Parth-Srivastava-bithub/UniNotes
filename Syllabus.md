@@ -16,7 +16,7 @@
 
 ---
 
-## **Unit II: Advanced Data Structures** [Unit 2](https://github.com/Parthdsaiml/UniNotes/blob/main/Unit%202.md#unit-2-solutions)
+## **Unit II: Advanced Data Structures** 
 - Red-Black Trees  
 - B-Trees  
 - Binomial Heaps  
