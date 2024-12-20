@@ -1,22 +1,25 @@
-## Syllabus in one view
-1. **Dynamic Programming**  
-   - Knapsack Problem  
-   - All-Pairs Shortest Paths  
-     - Warshall's Algorithm  
-     - Floyd's Algorithm  
-   - Resource Allocation Problem  
+## Syllabus in One View
+### **Divide and Conquer**  
+1. **Sorting**  
+   - Merge Sort  
+   - Quick Sort  
+2. **Matrix Multiplication**  
+   - Strassen’s Algorithm  
+3. **Convex Hull**  
+   - Finding the convex hull using the Divide and Conquer approach  
+4. **Searching**  
+   - Binary Search  
 
-2. **Backtracking**  
-   - Travelling Salesman Problem  
-   - Graph Coloring  
-   - n-Queen Problem  
-   - Hamiltonian Cycles  
-   - Sum of Subsets  
-
-3. **Branch and Bound**  
-   - Travelling Salesman Problem  
-   - Other Problem Examples  
-
+### **Greedy Methods**  
+1. **Optimal Reliability Allocation**  
+2. **Knapsack Problem**  
+   - Fractional Knapsack  
+3. **Minimum Spanning Trees**  
+   - Prim’s Algorithm  
+   - Kruskal’s Algorithm  
+4. **Single Source Shortest Paths**  
+   - Dijkstra’s Algorithm  
+   - Bellman-Ford Algorithm  
 ## Divide And Conquer (Unit 3)
 
 "Divide and conquer" is an algorithmic technique where a problem is broken down into smaller subproblems, solved independently, and then combined to form the solution.
