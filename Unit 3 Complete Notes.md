@@ -1,3 +1,22 @@
+## Syllabus in one view
+1. **Dynamic Programming**  
+   - Knapsack Problem  
+   - All-Pairs Shortest Paths  
+     - Warshall's Algorithm  
+     - Floyd's Algorithm  
+   - Resource Allocation Problem  
+
+2. **Backtracking**  
+   - Travelling Salesman Problem  
+   - Graph Coloring  
+   - n-Queen Problem  
+   - Hamiltonian Cycles  
+   - Sum of Subsets  
+
+3. **Branch and Bound**  
+   - Travelling Salesman Problem  
+   - Other Problem Examples  
+
 ## Divide And Conquer (Unit 3)
 
 "Divide and conquer" is an algorithmic technique where a problem is broken down into smaller subproblems, solved independently, and then combined to form the solution.
