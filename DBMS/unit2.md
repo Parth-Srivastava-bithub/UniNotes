@@ -1,4 +1,85 @@
+```bas
+Relational Database and SQL Concepts
+├── Relational Data Model Concepts
+│   ├── Tables (Relations)
+│   ├── Rows (Tuples)
+│   └── Columns (Attributes)
+├── Integrity Constraints
+│   ├── Entity Integrity: Primary key must be unique and not null
+│   ├── Referential Integrity: Foreign key references primary key
+│   ├── Key Constraints: Unique identification of rows
+│   └── Domain Constraints: Restriction on attribute values
+├── Relational Algebra
+│   ├── Operations
+│   │   ├── Selection (σ)
+│   │   ├── Projection (π)
+│   │   ├── Union (∪)
+│   │   ├── Set Difference (−)
+│   │   ├── Cartesian Product (×)
+│   │   └── Join (⋈)
+├── Relational Calculus
+│   ├── Tuple Relational Calculus (TRC)
+│   └── Domain Relational Calculus (DRC)
+├── SQL Introduction
+│   ├── Characteristics
+│   │   ├── Declarative Language
+│   │   └── Handles large data
+│   ├── Advantages
+│   │   ├── Simple Syntax
+│   │   ├── Portability
+│   │   └── Scalability
+├── SQL Data Types and Literals
+│   ├── Numeric (INT, FLOAT)
+│   ├── String (CHAR, VARCHAR)
+│   ├── Date/Time (DATE, TIMESTAMP)
+│   └── Literals (e.g., 'Hello', 123)
+├── Types of SQL Commands
+│   ├── DDL (CREATE, ALTER, DROP)
+│   ├── DML (INSERT, UPDATE, DELETE)
+│   ├── DCL (GRANT, REVOKE)
+│   └── TCL (COMMIT, ROLLBACK)
+├── SQL Operators and Their Procedure
+│   ├── Arithmetic (+, -, *, /)
+│   ├── Comparison (=, >, <, !=)
+│   └── Logical (AND, OR, NOT)
+├── Tables, Views, and Indexes
+│   ├── Tables: Store data
+│   ├── Views: Virtual tables
+│   └── Indexes: Improve query performance
+├── Queries and Subqueries
+│   ├── Simple Queries: SELECT
+│   └── Subqueries: Nested SELECT statements
+├── Aggregate Functions
+│   ├── SUM
+│   ├── AVG
+│   ├── COUNT
+│   ├── MAX
+│   └── MIN
+├── Insert, Update, and Delete Operations
+│   ├── INSERT INTO
+│   ├── UPDATE
+│   └── DELETE FROM
+├── Joins, Unions, Intersection, Minus
+│   ├── Joins
+│   │   ├── INNER JOIN
+│   │   ├── LEFT JOIN
+│   │   └── RIGHT JOIN
+│   ├── Union (Combine results)
+│   ├── Intersection (Common results)
+│   └── Minus (Difference)
+├── Cursors
+│   ├── Definition: Pointer to rows
+│   └── Used for row-by-row operations
+├── Triggers
+│   ├── Definition: Automated actions
+│   └── Fired on INSERT, UPDATE, or DELETE
+└── Procedures in SQL/PL SQL
+    ├── Stored Procedures
+    │   └── Precompiled SQL statements
+    └── Functions
+        └── Return single value
 
+```
 ## **1. Relational Data Model Concepts**
 
 ### **Relational Data Model**:
