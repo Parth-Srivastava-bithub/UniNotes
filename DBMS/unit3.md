@@ -25,7 +25,7 @@ Relational Database Concepts
 
 ```
 ### **1. Functional Dependencies (FD)**
-- **Definition**: A relationship between attributes in a table where one attribute uniquely determines another.
+- **Definition**: A functional dependency (FD) defines a relationship between two sets of attributes in a table. If one attribute (or a set of attributes) determines another, it implies that for every value of the first attribute(s), there is exactly one corresponding value for the second attribute(s).
 - **Notation**: `A → B` means if two rows have the same value for `A`, they must have the same value for `B`.
 
 #### Example:
@@ -37,18 +37,18 @@ Relational Database Concepts
 | 3      | Rahul   | 10A   | 78    |  
 
 **FDs in the table**:  
-- `RollNo → Name, Class, Marks`: RollNo uniquely identifies all other attributes.  
+- `RollNo → Name, Class, Marks`: RollNo uniquely identifies all other attributes.
 - `Class → Marks` is **not valid** because multiple students can have the same Class but different Marks.
 
 ---
 
 ### **2. Normal Forms**
-Normalization eliminates redundancy and ensures data integrity by organizing data into structured forms.
+Normalization is the process of organizing data to reduce redundancy and improve data integrity.
 
 #### **First Normal Form (1NF)**:
-- A table is in 1NF if:
-  - Each column contains atomic (indivisible) values.
-  - There are no repeating groups.
+- A table is in **1NF** if:
+  - Every column contains atomic (indivisible) values.
+  - There are no repeating groups (multiple values in a single column for a row).
 
 **Invalid Table (Repeating Groups)**:  
 | RollNo | Name  | Subjects      |  
@@ -66,7 +66,7 @@ Normalization eliminates redundancy and ensures data integrity by organizing dat
 ---
 
 #### **Second Normal Form (2NF)**:
-- A table is in 2NF if:
+- A table is in **2NF** if:
   - It is in 1NF.
   - No partial dependency exists (i.e., no non-prime attribute depends only on part of a composite key).
 
@@ -77,7 +77,7 @@ Normalization eliminates redundancy and ensures data integrity by organizing dat
 | 1      | 102      | Science    | 90    |  
 
 Here, `CourseName` depends only on `CourseID`, not on the full key (`RollNo, CourseID`).  
-**Normalized Table (2NF)**:  
+**Normalized Tables (2NF)**:
 
 **Table 1: StudentCourses**  
 | RollNo | CourseID | Marks |  
@@ -94,7 +94,7 @@ Here, `CourseName` depends only on `CourseID`, not on the full key (`RollNo, Cou
 ---
 
 #### **Third Normal Form (3NF)**:
-- A table is in 3NF if:
+- A table is in **3NF** if:
   - It is in 2NF.
   - No transitive dependency exists (i.e., non-prime attributes depend on other non-prime attributes).
 
@@ -105,7 +105,7 @@ Here, `CourseName` depends only on `CourseID`, not on the full key (`RollNo, Cou
 | 2      | 10B   | Ms. Gupta    |  
 
 Here, `ClassTeacher` depends on `Class`, not directly on `RollNo`.  
-**Normalized Table (3NF)**:  
+**Normalized Tables (3NF)**:
 
 **Table 1: Students**  
 | RollNo | Class |  
@@ -122,9 +122,9 @@ Here, `ClassTeacher` depends on `Class`, not directly on `RollNo`.
 ---
 
 ### **3. Boyce-Codd Normal Form (BCNF)**
-- A table is in BCNF if:
+- A table is in **BCNF** if:
   - It is in 3NF.
-  - For every functional dependency `A → B`, `A` must be a superkey.
+  - For every functional dependency `A → B`, `A` must be a superkey (i.e., a key that uniquely identifies rows in the table).
 
 **Example of BCNF Violation**:  
 | StudentID | Subject   | Teacher     |  
@@ -134,7 +134,7 @@ Here, `ClassTeacher` depends on `Class`, not directly on `RollNo`.
 | 1         | Science   | Ms. Gupta   |  
 
 Here, `Subject → Teacher`, but `Subject` is not a superkey.  
-**Normalized Table (BCNF)**:  
+**Normalized Tables (BCNF)**:
 
 **Table 1: Subjects**  
 | Subject   | Teacher     |  
@@ -152,7 +152,7 @@ Here, `Subject → Teacher`, but `Subject` is not a superkey.
 ---
 
 ### **4. Inclusion Dependence**
-- **Definition**: Ensures that values in one table must match values in another, similar to referential integrity.
+- **Definition**: Ensures that values in one table must match values in another, similar to **referential integrity**. If a foreign key is involved, the foreign key values must exist in the referenced table.
 
 **Example**:  
 **Table 1: Students**  
@@ -166,12 +166,13 @@ Here, `Subject → Teacher`, but `Subject` is not a superkey.
 |--------|----------|  
 | 1      | 101      |  
 | 2      | 102      |  
-- `Enrollments.RollNo` must match `Students.RollNo`.
+
+- In this example, `Enrollments.RollNo` must match `Students.RollNo` to maintain the inclusion dependency.
 
 ---
 
 ### **5. Lossless Join Decomposition**
-- **Definition**: Splitting a table into smaller tables without losing data when they are joined back.
+- **Definition**: Splitting a table into smaller tables without losing data when they are joined back together.
 
 #### Example:
 **Original Table**:  
@@ -179,7 +180,7 @@ Here, `Subject → Teacher`, but `Subject` is not a superkey.
 |--------|----------|-------|------------|  
 | 1      | 101      | 85    | Math       |  
 
-**Decomposed Tables**:  
+**Decomposed Tables**:
 
 **Table 1: StudentCourses**  
 | RollNo | CourseID | Marks |  
@@ -191,32 +192,33 @@ Here, `Subject → Teacher`, but `Subject` is not a superkey.
 |----------|------------|  
 | 101      | Math       |  
 
-Join Result: Matches the original table.
+- After joining the decomposed tables, the result matches the original table, ensuring a **lossless join decomposition**.
 
 ---
 
 ### **6. Normalization Using FDs, MVDs, and JDs**
 #### **Multivalued Dependencies (MVDs)**:
-- Occurs when one attribute determines multiple independent values of another attribute.
-- **Example**:  
-  | StudentID | Course | Hobby      |  
-  |-----------|--------|------------|  
-  | 1         | Math   | Painting   |  
-  | 1         | Math   | Singing    |  
+- An MVD occurs when one attribute determines multiple independent values of another attribute, without affecting other attributes.
+  
+**Example**:  
+| StudentID | Course | Hobby      |  
+|-----------|--------|------------|  
+| 1         | Math   | Painting   |  
+| 1         | Math   | Singing    |  
 
-Here, `StudentID →→ Hobby` (MVD), and it’s independent of `Course`.
+Here, `StudentID →→ Hobby` (MVD), where `Hobby` is independent of `Course`.
 
 #### **Join Dependencies (JDs)**:
-- A table can be decomposed into smaller tables and then joined without losing data.
+- A table can be decomposed into smaller tables, and when joined back, no data is lost, ensuring the original table can be reconstructed.
 
 ---
 
 ### **7. Alternative Approaches to Database Design**
 1. **ER Model Design**:
-   - Use Entity-Relationship diagrams to design databases visually.
+   - Use **Entity-Relationship (ER)** diagrams to design databases visually. It helps to understand the relationships between entities and their attributes.
+   
 2. **Denormalization**:
-   - Combine tables for performance optimization, sacrificing normalization.
+   - The process of combining tables to improve query performance, often by reducing the number of joins needed. However, this sacrifices normalization to some extent, increasing redundancy and potential anomalies.
+   
 3. **Domain-Key Normal Form (DKNF)**:
-   - Ensures every constraint is a logical consequence of domain and key constraints.
-
-
+   - A higher level of normalization where all constraints in a database are based on **domain constraints** and **key constraints**, ensuring that every constraint is a logical consequence of these two kinds of constraints.
