@@ -1,4 +1,65 @@
+```bash
+Overview of Database Concepts
+├── Database System vs File System
+│   ├── Database System: Data integrity, multi-user support
+│   └── File System: Limited data sharing, no relationships
+├── Database System Concepts and Architecture
+│   ├── Layers
+│   │   ├── Physical Layer
+│   │   ├── Logical Layer
+│   │   └── View Layer
+│   ├── Components
+│   │   ├── DBMS Engine
+│   │   ├── Query Processor
+│   │   └── Storage Manager
+├── Data Models, Schema, and Instances
+│   ├── Data Models
+│   │   ├── Relational
+│   │   ├── Hierarchical
+│   │   └── Network
+│   ├── Schema
+│   │   ├── Physical Schema
+│   │   ├── Logical Schema
+│   │   └── View Schema
+│   └── Instance: Snapshot of data
+├── Data Independence
+│   ├── Logical Independence
+│   └── Physical Independence
+├── Database Language and Interfaces
+│   ├── Data Definition Language (DDL)
+│   ├── Data Manipulation Language (DML)
+│   ├── Query Languages (SQL)
+│   └── User Interfaces
+├── Data Modeling Using ER Model
+│   ├── ER Model Concepts
+│   │   ├── Entities
+│   │   ├── Attributes
+│   │   └── Relationships
+│   ├── Notation for ER Diagram
+│   │   ├── Rectangles: Entities
+│   │   ├── Ovals: Attributes
+│   │   └── Diamonds: Relationships
+│   ├── Mapping Constraints
+│   │   ├── 1:1
+│   │   ├── 1:N
+│   │   └── M:N
+│   ├── Keys
+│   │   ├── Super Key
+│   │   ├── Candidate Key
+│   │   └── Primary Key
+│   ├── Generalization and Aggregation
+│   │   ├── Generalization: Combining entities
+│   │   └── Aggregation: Abstracting relationships
+│   ├── Reduction of ER Diagrams to Tables
+│   └── Extended ER Model
+│       ├── Specialization
+│       ├── Generalization
+│       └── Subclasses
+└── Relationships of Higher Degree
+    ├── Ternary Relationships
+    └── Higher-Degree Relationships
 
+```
 
 ## **1. Database System vs File System**
 
