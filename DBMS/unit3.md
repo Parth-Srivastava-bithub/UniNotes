@@ -1,5 +1,29 @@
+```bash
+Relational Database Concepts
+├── Functional Dependencies
+│   ├── Definition
+│   ├── FDs Examples
+│   └── Inclusion Dependence
+├── Normalization
+│   ├── 1NF
+│   │   └── Example: Atomic Values
+│   ├── 2NF
+│   │   ├── Example: Partial Dependency Removal
+│   └── 3NF
+│       ├── Example: Transitive Dependency Removal
+│       └── Includes BCNF
+│           └── Example: Superkey Constraint
+├── Lossless Join Decomposition
+│   └── Example: Splitting and Rejoining Tables
+└── Alternative Approaches to Database Design
+    ├── ER Model Design
+    │   └── Example: Visual Design
+    ├── Denormalization
+    │   └── Example: Performance Optimization
+    └── DKNF
+        └── Example: Domain-Key Constraints
 
-
+```
 ### **1. Functional Dependencies (FD)**
 - **Definition**: A relationship between attributes in a table where one attribute uniquely determines another.
 - **Notation**: `A → B` means if two rows have the same value for `A`, they must have the same value for `B`.
