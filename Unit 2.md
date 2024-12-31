@@ -1,6 +1,46 @@
 # Unit 2 Solutions
 Here’s the list of topics for **Advanced Data Structures**:
+```bash
+Data Structures
+├── Red-Black Tree
+│   ├── Properties
+│   │   ├── Binary Search Tree Properties
+│   │   ├── Red-Black Tree Properties
+│   ├── Theorem
+│   │   └── h ≤ 2 * log(n + 1)
+│   ├── Rotations
+│   │   ├── Left Rotation
+│   │   └── Right Rotation
+│   ├── Insertion
+│   └── Deletion
+│       ├── Case 1
+│       ├── Case 2
+│       └── Case 3
+├── B-Tree
+│   ├── Properties
+│   ├── Theorem
+│   │   └── h ≤ log((n + 1) / 2)
+│   ├── Search
+│   ├── Create
+│   ├── Insert
+│   └── Delete
+├── Binomial Heap
+│   ├── Properties
+│   ├── Operations
+│   │   ├── Create
+│   │   ├── Find
+│   │   ├── Union
+│   │   ├── Insert
+│   │   ├── Extract (Min/Max)
+│   │   ├── Decrease
+│   │   └── Delete
+├── Fibonacci Heap
+│   ├── Properties
+│   ├── Same Operations as Binomial Heap
+├── Tries (Prefix Tree)
+└── Skip Lists
 
+```
 1. **Red-Black Trees**  Coming soon
 2. **B-Trees**  
 3. **Binomial Heaps**  
