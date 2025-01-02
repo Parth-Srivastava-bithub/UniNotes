@@ -150,7 +150,6 @@ if y.left = Null[T]:
     x = y.left
 else:
     x = y.right
-
 p[x] = p[y] 
 
 ```
