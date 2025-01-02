@@ -132,71 +132,72 @@ def insert(tree, key):
         parent.right = new_node  # Insert as right child
 
 ```
-
-# B-Trees
-
-## 1. Searching [A]
-
-```python
-def search(node, k):
-    i = 0
-    while i < len(node.keys) and k > node.keys[i]:
-        i += 1
-
-    # If the key is found
-    if i < len(node.keys) and node.keys[i] == k:
-        return node
-
-    # If the key is not found and the node is a leaf
-    if node.leaf:
-        return None
-
-    # Search in the appropriate child
-    return search(node.children[i], k)
-```
-
-## 2. Creation (WorkFlow needed just) [W]
-
-## 3. Insertion (Workflow needed just) [W]
-
-## 4. Deletion (Workflow needed just) [W]     
-    - With Cases 1 2 3
-
 ---
+## Four Algo Task
+# Unit 2 [2 Jan]
 
-# B Heap
+## 1. RB Tree Deletion
 
-[## 1. Follow the link](https://github.com/Parthdsaiml/UniNotes/blob/main/Unit%202.md#algorithm)
-    
-# Fib Heap
-
-## Decreasing Key [A]
+### 1. RB Delete (Deletion)
 
 ```python
-def fib_heap_decrease_key(fib_heap, node, new_key):
-    if new_key > node.key:
-        raise ValueError("New key is greater than current key")
-    
-    node.key = new_key
-    parent = node.parent
-    
-    if parent and node.key < parent.key:
-        fib_heap_cut(fib_heap, node, parent)
-        fib_heap_cascading_cut(fib_heap, parent)
 
-def fib_heap_cut(fib_heap, node, parent):
-    # Remove node from parent's children list and add to root list
-    parent.children.remove(node)
-    fib_heap.root_list.append(node)
-    node.parent = None
-    node.mark = False
+if (z.left) == Null[T] or (z.right) == Null[T]:
+    y = z
+else:
+    y = Tree-Successor
+if y.left = Null[T]:
+    x = y.left
+else:
+    x = y.right
 
-def fib_heap_cascading_cut(fib_heap, parent):
-    if parent.parent:
-        if not parent.mark:
-            parent.mark = True
-        else:
-            fib_heap_cut(fib_heap, parent, parent.parent)
-            fib_heap_cascading_cut(fib_heap, parent.parent)
+p[x] = p[y] 
+
 ```
 
+### 2. Deletion Fixup
+
+```python
+
+while (x != root[T] and color[x] = Black):
+    do if x = left[p[x]]:
+        w = right[p[x]]
+
+        if color[w] = Red:
+            color[w] = Black
+            color[p[x]] = Red
+            Left-Rotate(T, p[x])
+        w = right[p[x]]
+
+```
+---
+# B-Tree
+### 3. Search
+
+```python
+def B-TREE -SEARCH(x, k)
+
+  i = 1
+   while i <= x.n and k > x.keyi
+    		i = i + 1
+     if i .x<= n and k == x.keyi
+ 		 return (x,i)
+ 	elseif x.leaf
+ 		return NIL
+ 	else DISK-READ (x.ci)
+  		return B-TREE-SEARCH(x. ci ,k)
+
+```
+
+### 4. Creation 
+
+```python
+
+def B-TREE-CREATE(T)
+  	x = ALLOCATE-NODE
+	x.leaf= TRUE
+	x:n=0
+	 DISK-WRITE(x)
+	 T.root=x
+
+```
