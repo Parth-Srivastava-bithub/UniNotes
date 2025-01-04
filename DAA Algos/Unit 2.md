@@ -181,7 +181,7 @@ def B-TREE -SEARCH(x, k)
     		i = i + 1
      if i .x<= n and k == x.keyi
  		 return (x,i)
- 	elseif x.leaf
+ 	else if x.leaf
  		return NIL
  	else DISK-READ (x.ci)
   		return B-TREE-SEARCH(x. ci ,k)
