@@ -1,4 +1,4 @@
-```bash
+# Overview
 - 1. Administrator Work
 - 2. Types of Users
   - 2.1 Administrator
@@ -129,7 +129,6 @@
       - 24.1.5.2 Participation Inheritance
     - 24.1.6 Category or Union
     - 24.1.7 Aggregation
-```
 
 ### 1. Administrator Work
 Administrators, often referred to as Database Administrators (DBAs), are responsible for the overall management and maintenance of the database system. Their tasks include:
