@@ -1,3 +1,136 @@
+```bash
+- 1. Administrator Work
+- 2. Types of Users
+  - 2.1 Administrator
+  - 2.2 End Users
+  - 2.3 Application Programmers
+  - 2.4 System Analysts
+  - 2.5 DB Designers
+  - 2.6 Naive Users
+- 3. Data Abstraction and its Levels
+  - 3.1 Internal
+  - 3.2 Conceptual
+  - 3.3 External
+- 4. ASCII Art for Showing View -> Conceptual -> Internal Level
+- 5. DBMS Architecture
+  - 5.1 Tier 1
+  - 5.2 Tier 2
+  - 5.3 Tier 3
+- 6. Data Independence
+  - 6.1 Logical
+  - 6.2 Physical
+  - 6.3 Advantages
+- 7. Data Models
+  - 7.1 Hierarchical
+  - 7.2 Network
+  - 7.3 ER Models
+  - 7.4 Relational Models
+  - 7.5 Object-Oriented Models
+  - 7.6 Flat Data Model
+  - 7.7 Object-Relational Models
+  - 7.8 The Associative Data Model
+  - 7.9 Context Data Model (Group of Models)
+- 8. Database Schema
+  - 8.1 Physical Schema
+  - 8.2 Logical Schema
+  - 8.3 View Schema
+- 9. Database Instances
+- 10. Keys
+- 11. DBMS Languages
+- 12. ER Model
+  - 12.1 Entity Set
+    - 12.1.1 Strong Set
+    - 12.1.2 Weak Set
+    - 12.1.3 Double Line Single Line
+  - 12.2 Relationship
+    - 12.2.1 Unary
+    - 12.2.2 Binary
+    - 12.2.3 Ternary
+    - 12.2.4 N-ARY
+  - 12.3 Attributes
+    - 12.3.1 Simple
+    - 12.3.2 Composite
+    - 12.3.3 Single Valued
+    - 12.3.4 Multivalued
+    - 12.3.5 Derived
+    - 12.3.6 Key
+  - 12.4 Constraints
+    - 12.4.1 Cardinality
+      - 12.4.1.1 M:N (Student - Course)
+      - 12.4.1.2 M:1 (Student -> Class)
+      - 12.4.1.3 1:N (Student <- Hobbies)
+      - 12.4.1.4 1:1 (Student <-> RollNumber)
+    - 12.4.2 Participation
+      - 12.4.2.1 Total (==>)
+      - 12.4.2.2 Partial (-->) 
+  - 12.5 Conversion to Relational Database
+    - 12.5.1 Strong Entity with Simple Attributes
+    - 12.5.2 SEW Composite Attributes
+    - 12.5.3 SEW Multivalued Attributes
+    - 12.5.4 Translating
+    - 12.5.5 For Binary Relationships
+      - 12.5.5.1 M:N
+      - 12.5.5.2 1:N
+      - 12.5.5.3 M:1
+      - 12.5.5.4 1:1
+- 13. Database Architecture
+- 14. DBMS Interface
+  - 14.1 Menu-Based
+  - 14.2 Form-Based
+  - 14.3 Graphical User Interface (GUI)
+  - 14.4 Natural Language
+  - 14.5 Speech Input and Output
+  - 14.6 Interfaces for Database Administrator
+- 15. DBMS vs RDBMS
+- 16. Difference Between Procedural DML and Non-Procedural DML
+- 17. Advantages File System Have Over Database System
+- 18. Metadata
+  - 18.1 Technical Metadata
+  - 18.2 Business Metadata
+  - 18.3 Operational Metadata
+  - 18.4 Descriptive Metadata
+- 19. Problems with File System
+  - 19.1 Data Redundancy
+  - 19.2 Data Inconsistency
+  - 19.3 Limited Access Control
+  - 19.4 No Multi-User Access
+  - 19.5 Lack of Backup and Recovery
+- 20. Types of Users
+  - 20.1 Database User Architecture
+  - 20.2 Database Administrator (DBA)
+  - 20.3 Application Programmers
+  - 20.4 System Analyst
+  - 20.5 Sophisticated User
+  - 20.6 Database Designer
+  - 20.7 Specialized User
+- 21. Three Schema Architecture
+  - 21.1 External Schema
+  - 21.2 Conceptual Schema
+  - 21.3 Internal Schema
+  - 21.4 Mapping
+  - 21.5 Objectives of Three Schema Architecture
+  - 21.6 Mapping Between Views
+  - 21.7 Conceptual Mapping in DBMS
+  - 21.8 Logical Physical Mapping
+  - 21.9 Data Independence
+  - 21.10 External Mapping in DBMS
+  - 21.11 View Logical Mapping
+- 22. Example Questions
+  - 22.1 In a university, a student enrolled in the course and a student assigned to at least one or more courses. A single professor teaches each course. To maintain instruction quality, a professor can deliver only one course.
+- 23. How Does Different Language Support Three Schema Architecture
+- 24. ER Diagram
+  - 24.1 Enhanced ER Diagram
+    - 24.1.1 Superclass
+    - 24.1.2 Subclass
+    - 24.1.3 Generalization
+    - 24.1.4 Specialization
+    - 24.1.5 Inheritance
+      - 24.1.5.1 Attribute Inheritance
+      - 24.1.5.2 Participation Inheritance
+    - 24.1.6 Category or Union
+    - 24.1.7 Aggregation
+```
+
 ### 1. Administrator Work
 Administrators, often referred to as Database Administrators (DBAs), are responsible for the overall management and maintenance of the database system. Their tasks include:
 - **Database Installation and Configuration**: Setting up the database software and configuring it to suit the organization's needs.
