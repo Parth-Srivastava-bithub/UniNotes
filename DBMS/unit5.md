@@ -347,8 +347,7 @@ Strict Timestamp Ordering (STO) is a stricter version of the basic Timestamp Ord
      - The read operation is allowed.
      - \(\text{read\_TS}(X)\) is updated to \(\max(\text{read\_TS}(X), \text{TS}(T))\).
 
-Strict Timestamp Ordering adds the additional rule that a transaction will be aborted if it attempts to read or write an item that has already been accessed by a transaction with a higher timestamp, further restricting concurrent operations to avoid conflicts.
-To make sure the equation looks like mine in GitHub, you'll need to use **inline LaTeX** syntax. GitHub supports **MathJax** for rendering LaTeX expressions when they are wrapped with dollar signs. 
+Strict Timestamp Ordering adds the additional rule that a transaction will be aborted if it attempts to read or write an item that has already been accessed by a transaction with a higher timestamp, further restricting concurrent operations to avoid conflicts
 
 # Thomas Write Rule
 
