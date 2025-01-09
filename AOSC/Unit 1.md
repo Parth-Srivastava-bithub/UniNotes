@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/b712850e-e2c5-428a-837f-f199085ffc76)# Definition of Soft Computing
+![image](https://github.com/user-attachments/assets/b712850e-e2c5-428a-837f-f199085ffc76)
+
+# Definition of Soft Computing
 
 Soft computing is a branch of artificial intelligence (AI) that focuses on solving complex problems by mimicking human-like reasoning. It encompasses various techniques that allow computers to handle uncertainty, imprecision, and approximate reasoning, which are often present in real-world scenarios. Unlike traditional computing, which relies on precise data and rigid algorithms, soft computing embraces flexibility and adaptability.
 
