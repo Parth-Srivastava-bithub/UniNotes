@@ -2,7 +2,6 @@
 ```bash
 Here's a tree structure for your detailed overview of neural networks and backpropagation:
 
-```
 Neural Networks and Backpropagation
 ├── Perceptron Model
 │   ├── Structure of a Perceptron
@@ -42,8 +41,7 @@ Neural Networks and Backpropagation
 └── Conclusion
 ```
 
-This structure organizes the content into a clear hierarchical format
-```
+
 
 ## Detailed Overview of Neural Networks and Backpropagation
 
