@@ -1,4 +1,49 @@
 # Unit 2
+```bash
+Here's a tree structure for your detailed overview of neural networks and backpropagation:
+
+```
+Neural Networks and Backpropagation
+├── Perceptron Model
+│   ├── Structure of a Perceptron
+│   │   ├── Input Layer
+│   │   ├── Weights
+│   │   └── Activation Function
+│   ├── Mathematical Representation
+│   └── Limitations
+├── Single Layer Artificial Neural Network
+│   └── Training Process
+├── Multilayer Perceptron (MLP)
+│   ├── Architecture
+│   └── Activation Functions
+│       ├── Sigmoid
+│       ├── Tanh
+│       └── ReLU (Rectified Linear Unit)
+├── Backpropagation Learning Methods
+│   ├── Forward Pass
+│   └── Backward Pass
+│       ├── Gradient Computation
+│       └── Weight Update
+├── Factors Affecting Backpropagation Training
+│   ├── Learning Rate Coefficient
+│   ├── Network Architecture
+│   ├── Activation Functions
+│   ├── Weight Initialization
+│   └── Regularization Techniques
+│       ├── Dropout
+│       └── L2 Regularization
+├── Applications of Backpropagation Networks
+│   ├── Image Recognition
+│   ├── Natural Language Processing (NLP)
+│   ├── Financial Forecasting
+│   ├── Medical Diagnosis
+│   ├── Game AI
+│   └── Autonomous Vehicles
+└── Conclusion
+```
+
+This structure organizes the content into a clear hierarchical format
+```
 
 ## Detailed Overview of Neural Networks and Backpropagation
 
