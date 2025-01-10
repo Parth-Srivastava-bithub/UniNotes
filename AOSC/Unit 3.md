@@ -1,4 +1,70 @@
-
+# Overview
+```bash
+Unit 3: Application of Soft Computing
+│
+├── Fuzzy Logic
+│   ├── Diagram
+│   ├── Application of Fuzzy Logic
+│
+├── Crisp Logic
+│   ├── Diagram
+│   ├── Application of Crisp Logic
+│
+├── Fuzzy vs Crisp
+│
+├── Crisp Set
+│   ├── Representation of Crisp Set
+│   ├── Operation of Classical Crisp Set
+│   │   ├── Union
+│   │   ├── Intersection
+│   │   ├── Complement
+│   │   └── Difference
+│
+├── Fuzzy Set
+│   ├── Representation of Fuzzy Set
+│   ├── Instead of Yes/No, Sort of, Mostly, Too, etc.
+│   ├── Properties
+│   │   ├── Commutativity
+│   │   ├── Associativity
+│   │   ├── Distributive
+│   │   ├── Idempotence
+│   │   ├── Identity
+│   │   ├── Transitivity
+│   │   ├── Involution
+│   │   ├── De-Morgan Law
+│   ├── Operation on Fuzzy Sets
+│   │   ├── Union
+│   │   ├── Intersection
+│   │   ├── Complement
+│   │   ├── Difference
+│   │   ├── Algebraic Sum
+│   │   ├── Algebraic Product
+│   │   ├── Bounded Sum
+│   │   ├── Bounded Difference
+│   │   └── Bounded Production
+│
+├── Crisp Set vs Fuzzy Set
+│
+├── Crisp Relation
+│   ├── Basic Operation on Crisp Relation with Matrix Help
+│   │   ├── Union
+│   │   ├── Intersection
+│   │   └── Complement
+│
+├── Fuzzy Relation
+│   ├── Operations on Fuzzy Relation with Matrix Help
+│   │   ├── Union
+│   │   ├── Intersection
+│   │   └── Complement
+│
+├── Fuzzy Composition
+│   ├── Fuzzy Max-Min Composition
+│   ├── Fuzzy Max-Product Composition
+│   ├── Fuzzy to Crisp Conversion
+│   │   └── Defuzzification
+│
+└── Defuzzification
+```
 # Application of Soft Computing
 
 Soft computing is a branch of computing that deals with approximation, uncertainty, and partial truth to achieve robust and low-cost solutions, especially for complex real-world problems. It combines various methodologies to solve problems where traditional methods might be inefficient or infeasible. Here are some key applications:
