@@ -378,3 +378,131 @@ The Data Analytics Life Cycle (DALC) is a systematic process that guides data an
 This cyclical process allows for continuous improvement as insights gained can lead back to further discovery or refinement of models, ensuring that data analytics remains aligned with business objectives and responsive to new information
 
  
+Data Analytics
+
+Need of Data Analytics
+
+Informed Decision Making: Enables data-driven, accurate decisions.
+
+Competitive Advantage: Helps identify market trends and opportunities.
+
+Cost Reduction: Optimizes processes to reduce expenses.
+
+Risk Management: Identifies and mitigates risks effectively.
+
+
+Applications of Data Analytics: Used across domains like healthcare, finance, marketing, and education.
+
+Big Data
+
+Big Data Problems: Includes data volume, velocity, variety, veracity, and value.
+
+Sources of Big Data:
+
+Social Media: User-generated content and interactions.
+
+Government Data: Public records and open datasets.
+
+IoT Devices: Sensors and smart devices generating data.
+
+Scientific Research: Experiment results and simulations.
+
+Log Files: System and application logs for analysis.
+
+Streaming Data: Real-time data from live feeds.
+
+Bank Transactions: Financial and transaction data.
+
+Wearable Health Devices: Fitness and health monitoring data.
+
+
+
+Key Features of Data Platforms
+
+Scalability: Handles growing data volume seamlessly.
+
+Flexibility: Adapts to varied data types and use cases.
+
+Real-time Processing: Processes data instantly for quick insights.
+
+Distributed Computing: Leverages multiple nodes for efficiency.
+
+Data Integration: Combines data from diverse sources.
+
+
+Big Data Platforms: Tools like Hadoop, Spark, Google BigQuery, and Amazon Redshift manage and analyze big data.
+
+
+---
+
+Process and Tools of Data Analytics
+
+Data Collection:
+
+Tools like Apache Kafka, Flume, Google Analytics, and APIs gather data.
+
+
+Data Cleaning:
+
+Tools like Open Refine, Trifacta, and Python prepare data for analysis.
+
+
+Data Exploration:
+
+Tools like Python, R, Tableau, and Power BI analyze patterns and distributions.
+
+
+Data Modeling:
+
+Libraries like Apache Spark MLlib, SAS, R, and Python create analytical models.
+
+
+Data Analysis:
+
+SQL, Python, R, and Excel uncover insights from data.
+
+
+Data Visualization:
+
+Tableau, Power BI, and R present data visually.
+
+
+Deployment and Monitoring:
+
+Docker, Kubernetes, and Apache Airflow manage and monitor models in production.
+
+
+Decision-Making and Reporting:
+
+Power BI, Tableau, Docker, and D3 help interpret results and communicate findings.
+
+
+
+---
+
+Structured vs Semi-Structured vs Unstructured Data
+
+
+---
+
+Data Analytics Life Cycle (DALC)
+
+1. Discovery: Define objectives, requirements, and data sources.
+
+
+2. Data Preparation: Clean, integrate, and prepare data for analysis.
+
+
+3. Model Planning: Select methods, tools, and techniques for analysis.
+
+
+4. Model Building: Develop and test predictive or analytical models.
+
+
+5. Communicating: Present results and insights to stakeholders.
+
+
+6. Operationalization: Deploy models and integrate insights into operations.
+
+
+
