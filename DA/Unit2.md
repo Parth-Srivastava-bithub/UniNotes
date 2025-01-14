@@ -1,3 +1,93 @@
+```bash
+Unit 2
+├── Regression Modeling
+│   ├── Types
+│   │   ├── Linear Regression Model
+│   │   │   ├── Simple Linear Regression
+│   │   │   └── Multi Linear Regression
+│   │   ├── Polynomial Regression
+│   │   ├── Ridge Regression
+│   │   ├── Lasso Regression
+│   │   ├── Logistic Regression
+│   │   └── Random Forest
+│   
+├── Multivariate Analysis
+│   ├── Definition
+│   └── Types
+│       ├── PCA (Principal Component Analysis)
+│       ├── Regression Modeling
+│       ├── Clustering
+│       └── Multivariate Analysis
+
+├── Bayesian Networks
+│   ├── Definition
+│   └── Key Points
+│       ├── Nodes
+│       ├── Edges 
+│       └── Probabilities
+│       └── Example
+
+├── SVM and Kernel Methods
+│   ├── SVM (Support Vector Machines)
+│   │   ├── Hyperplanes 
+│   │   ├── Support Vectors
+│   │   └── Margin
+│   └── Kernel Methods
+│       ├── Linear Kernel
+│       ├── Polynomial Kernel 
+│       ├── RBF (Radial Basis Function) Kernel
+│       └── Sigmoid Kernel
+
+├── Time Series Analysis
+│   ├── Components of Time Series 
+│   │   ├── Trend
+│   │   ├── Seasonality
+│   │   ├── Cyclical 
+│   │   └── Noise
+│   └── Applications
+│       ├── Finance
+│       ├── Economics
+│       ├── Weather Forecasting 
+│       ├── Retail
+│       └── Healthcare
+
+├── PCA (Principal Component Analysis)
+│   ├── Working
+│   │   ├── Standardization
+│   │   ├── Covariance Matrix
+│   │   ├── Eigenvalues and Eigenvectors
+│   │   ├── Sort and Select Principal Components 
+│   │   └── Transform Data 
+│   └── Applications
+│       ├── Data Visualization 
+│       ├── Noise Filtration 
+│       ├── Feature Extraction 
+│       └── Image Compression 
+
+├── Fuzzy Decision Tree (FDT)
+│   ├── Concept 
+│   │   
+│   └─ Key Concepts 
+|      |  
+|      |-- Fuzzy Set  
+|      |-- Membership Function  
+|      |
+|      |-- Structure of FDT  
+|      |    |-- Nodes  
+|      |    |-- Branches  
+|      |    |-- Leaves  
+|      |
+|      |-- Advantages of FDT  
+|      |
+|      |-- Disadvantages of FDT  
+
+└─ Stochastic Search Methods 
+    └─ Some Common Methods  
+        ├─ Genetic Algorithm  
+        ├─ Ant Colony Optimization  
+        ├─ Random Search  
+        └─ Particle Swarm Optimization  
+```
 
 ## Detailed Exploration of Regression Models
 
