@@ -516,6 +516,9 @@ Bayesian networks provide a powerful framework for modeling complex systems with
 
 ### Support Vector Machines (SVM)
 
+![image](https://github.com/user-attachments/assets/ac2bc2aa-541c-462e-9d79-3f0471243d8a)
+
+
 Support Vector Machines (SVM) are a type of supervised learning algorithm primarily used for classification tasks, although they can also be applied to regression problems. The main objective of SVM is to find the optimal hyperplane that separates data points of different classes in a high-dimensional space.
 
 #### Hyperplanes
