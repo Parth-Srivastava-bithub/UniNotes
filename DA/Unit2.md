@@ -93,6 +93,9 @@ Unit 2
 
 ### 1. Linear Regression Model
 
+![image](https://github.com/user-attachments/assets/b71eaa9b-664b-423d-91ce-f5da47a7a418)
+
+
 Linear regression aims to establish a linear relationship between the dependent variable `y` and independent variables `X`.
 
 #### Mathematical Foundation
@@ -130,6 +133,9 @@ y = β0 + β1 * X1 + β2 * X2 + ... + βn * Xn + ε
 
 ### 1.1 Simple Linear Regression
 
+![image](https://github.com/user-attachments/assets/4363d093-e735-4ae1-9f4d-2e83a2e39cdd)
+
+
 This model involves one dependent variable and one independent variable. The equation simplifies to:
 
 ```
@@ -141,6 +147,8 @@ y = β0 + β1 * X + ε
 - Estimating sales from advertising spend.
 
 ### 1.2 Multiple Linear Regression
+
+![image](https://github.com/user-attachments/assets/3fa0971c-6abf-42e0-8f93-9fb5d0940939)
 
 This model extends simple linear regression by incorporating multiple predictors:
 
@@ -155,6 +163,9 @@ y = β0 + β1 * X1 + β2 * X2 + ... + βn * Xn + ε
 ---
 
 ### 2. Polynomial Regression
+
+![image](https://github.com/user-attachments/assets/fc80a586-aab9-4fc4-ab09-0766f0fabf1e)
+
 
 Polynomial regression is used when data shows a curvilinear relationship. It fits a polynomial equation to the data:
 
@@ -179,6 +190,8 @@ The degree of the polynomial (n) indicates how many bends or curves the model ca
 ---
 
 ### 3. Ridge Regression
+
+![image](https://github.com/user-attachments/assets/d51fa457-e5f7-4166-aa2c-5671ffa725a5)
 
 Ridge regression addresses multicollinearity by adding an L2 penalty term to the loss function:
 
@@ -205,6 +218,8 @@ where
 
 ### 4. Lasso Regression
 
+![image](https://github.com/user-attachments/assets/336f1b53-cf43-42b9-80a7-2068543c98f7)
+
 Lasso regression introduces an L1 penalty term that can shrink some coefficients to zero:
 
 ```
@@ -229,6 +244,8 @@ where
 ---
 
 ### 5. Logistic Regression
+
+![image](https://github.com/user-attachments/assets/468eebca-2171-465f-8b86-8f256d7e4e17)
 
 Logistic regression is used for binary classification problems. It models the probability that a given input belongs to a certain class using the logistic function:
 
@@ -255,6 +272,8 @@ P(y=1|X) = 1 / (1 + e^-(β0 + Σ (from i=1 to n) βi * Xi))
 ---
 
 ### 6. Random Forest Regression
+
+![image](https://github.com/user-attachments/assets/78204247-eafc-4724-a6e9-58bc9eed79bd)
 
 Random Forest is an ensemble learning method that constructs multiple decision trees during training and outputs the average prediction from all trees.
 
@@ -289,6 +308,8 @@ Regression modeling encompasses a wide range of techniques tailored to different
 Certainly! Let's delve deeper into each aspect of multivariate analysis, providing comprehensive details on its definition, types, methodologies, applications, and advantages.
 
 ## Multivariate Analysis
+
+![image](https://github.com/user-attachments/assets/4ed349da-734a-4847-ba42-4696b4256c85)
 
 ### Definition
 Multivariate analysis (MVA) is a set of statistical techniques used to analyze data that involves more than two variables simultaneously. It aims to understand the relationships and interactions among these variables, allowing researchers to uncover patterns, trends, and structures within complex datasets. MVA is particularly useful in fields such as social sciences, marketing, finance, biology, and environmental studies where multiple factors influence outcomes.
@@ -348,6 +369,9 @@ Regression analysis involves modeling the relationship between one dependent var
 - Can be used for prediction and hypothesis testing.
 
 #### 3. Clustering
+
+![image](https://github.com/user-attachments/assets/c09ea1d9-0f1f-4ce2-9157-dabca8cbba92)
+
 Clustering techniques group observations based on similarity without prior labels. Common methods include:
 
 - **K-means Clustering**:
@@ -417,6 +441,8 @@ Multivariate analysis encompasses a wide range of techniques designed to handle 
 Certainly! Here’s the information about Bayesian networks, including the mathematical formulas presented in ASCII format.
 
 ## Bayesian Networks
+
+![image](https://github.com/user-attachments/assets/1148d7a9-6676-408b-a076-afb7b7f12ada)
 
 ### Definition
 A Bayesian network, also known as a belief network or a causal network, is a probabilistic graphical model that represents a set of variables and their conditional dependencies through a Directed Acyclic Graph (DAG). In this structure, nodes represent random variables, while directed edges signify the relationships between these variables. Bayesian networks are used to model uncertainty and make inferences based on observed data.
@@ -569,6 +595,8 @@ Support Vector Machines and kernel methods provide powerful tools for classifica
 ## Time Series Analysis
 
 ### Components of Time Series
+
+![image](https://github.com/user-attachments/assets/619732c5-468b-4a62-8a9e-5b3956f7cce7)
 
 Time series analysis involves examining data points collected or recorded at specific time intervals. The primary components of a time series include:
 
