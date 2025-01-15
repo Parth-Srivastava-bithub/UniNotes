@@ -1,8 +1,6 @@
-Sure! Here's a more detailed explanation for each section:
 
----
 
-### **Unit 3: Stream Computing and Related Concepts**
+# **Unit 3: Stream Computing and Related Concepts**
 
 ---
 
