@@ -1,3 +1,114 @@
+# Overview
+
+```bash
+Unit 5
+├── Map Reduce
+│   ├── Scalability
+│   ├── Fault tolerance
+│   ├── Ease of use
+│   ├── Load balancing
+│   ├── Flexibility
+│   ├── Workflow
+│   │   ├── Input split
+│   │   ├── Map phase
+│   │   ├── Shuffle and sort
+│   │   ├── Reduce phase
+│   │   └── Output
+│   └── Applications
+│       └── Any five
+├── Hadoop
+│   ├── What is Hadoop?
+│   ├── Workflow
+│   │   ├── Data ingestion
+│   │   ├── Data storage
+│   │   ├── Data processing
+│   │   └── Data output
+│   ├── Core components
+│   │   ├── HDES
+│   │   ├── Namenode
+│   │   ├── Datanode
+│   │   ├── Metadata
+│   │   ├── Client
+│   │   ├── Replication
+│   │   └── Block operation
+├── Data Flow
+│   ├── File write
+│   └── File read
+├── Pig and Hive
+│   ├── Pig
+│   │   ├── Key features
+│   │   │   ├── Ease of programming
+│   │   │   ├── Sequential data flow
+│   │   │   ├── User friendly
+│   │   │   ├── Flexibility
+│   │   │   └── Optimization
+│   ├── Hive
+│   │   ├── Key features
+│   │   │   ├── Hive QI
+│   │   │   ├── Schema on reading
+│   │   │   ├── Storage independence
+│   │   │   ├── Scalability
+│   │   │   └── Partitioning
+├── HBase
+│   ├── Key features
+│   │   ├── Distributed architecture
+│   │   ├── Columnar storage
+│   │   ├── Schema flexibility
+│   │   ├── Storage consistency
+│   │   ├── Low latency access
+│   └── Sharding
+│       ├── Need of sharding
+│       │   ├── Example
+│       │   ├── Problem
+│       │   └── Solution
+│       ├── Features of sharding
+│       │   ├── Smaller database
+│       │   ├── Faster performance
+│       │   ├── Manageability
+│       │   ├── Complexity
+│       │   └── Cost efficiency
+├── Data visualization
+│   ├── Techniques
+│   │   ├── Box Plot
+│   │   ├── Histogram
+│   │   ├── Heat maps
+│   │   └── Charts
+│   │       ├── Pie Charts
+│   │       ├── Line Charts
+│   │       └── Bar Charts
+├── S3 (Amazon Simple Storage Service)
+│   ├── Key features
+│   │   ├── Scalability
+│   │   ├── Durability
+│   │   ├── Availability
+│   │   ├── Security
+│   │   └── Performance
+│   └── Use of S3
+├── NoSQL Database
+│   ├── Key characteristics
+│   │   ├── Schema-less
+│   │   ├── Scalability
+│   │   ├── Performance
+│   │   └── Data model flexibility
+│   ├── Some popular NoSQL databases
+│   │   └── Any 5
+│   ├── Advantages
+│   └── Disadvantages
+├── R Programming
+│   ├── Key Features
+│   │   ├── Statistical analysis
+│   │   ├── Data manipulation
+│   │   ├── Open source
+│   │   ├── Community
+│   │   ├── Integration
+│   │   └── Flexible
+│   ├── Core components
+│   │   ├── R Language
+│   │   ├── R Environment
+│   │   └── R Studio
+│   └── Program to check whether the number is prime or not
+```
+
 ### MapReduce
 
 **MapReduce** is a programming model used for processing and generating large datasets with a parallel, distributed algorithm. It is mainly used in big data processing tasks across distributed systems.
