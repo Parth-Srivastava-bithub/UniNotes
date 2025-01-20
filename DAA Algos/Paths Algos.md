@@ -222,3 +222,98 @@ Each algorithm is designed for specific problems:
 - **Dijkstra’s and Bellman-Ford**: Solve shortest path problems (Dijkstra for positive weights, Bellman-Ford for negative weights).
 - **Floyd-Warshall and Warshall’s**: Find shortest paths between all pairs and determine reachability between all nodes.
 
+
+Got it! Here's the code with the style you want, focusing on describing the actions instead of showing the detailed implementation:
+
+### 1. Naive Approach String Matching
+```python
+def naive_search(text, pattern):
+    # Slide the pattern over the text
+    for each possible starting index in the text:
+        # Check if the current substring matches the pattern
+        if substring matches pattern:
+            return starting index  # Return the index of the match
+    return -1  # Return -1 if no match is found
+```
+
+### 2. Rabin-Karp Algorithm
+```python
+def rabin_karp(text, pattern, q=101):
+    d = 256  # Number of characters in the input alphabet
+
+    # Initialize p_hash and t_hash
+    p_hash created
+    t_hash created
+
+    # Compute the hash of the first window of the text
+    initial hash computed
+
+    # Slide the pattern over the text
+    for each window in the text:
+        # If the current window's hash matches the pattern's hash
+        if p_hash equals t_hash:
+            # Check if the current window matches the pattern
+            if substring matches pattern:
+                return starting index  # Return the index of the match
+
+        # Update the hash of the next window in the text
+        next hash value updated
+
+    return -1  # Return -1 if no match is found
+```
+
+### 3. Knuth-Morris-Pratt (KMP) Algorithm
+```python
+def kmp_search(text, pattern):
+    # Create the lps array for the pattern
+    lps array created
+
+    # Match pattern with text using the lps array
+    for each character in the text:
+        if characters match:
+            move to the next character
+        else:
+            adjust the index using the lps array
+        if complete match found:
+            return starting index  # Return the index of the match
+
+    return -1  # Return -1 if no match is found
+```
+
+### 4. Union of Two Binomial Heaps
+```python
+class BinomialHeapNode:
+    def __init__(self, key):
+        self.key = key
+        self.child = self.sibling = self.parent = None
+
+def union_binomial_heaps(h1, h2):
+    # Merge two binomial heaps
+    merged heaps created
+
+    # Adjust trees of the same degree
+    for each pair of trees with the same degree:
+        # Link the smaller root tree to the larger root tree
+        trees linked
+
+    return merged heap  # Return the merged heap
+```
+
+### 5. Longest Common Subsequence (LCS)
+```python
+def lcs(X, Y):
+    # Initialize dp table
+    dp table created
+
+    # Fill dp table based on matches between X and Y
+    for each character in X:
+        for each character in Y:
+            if characters match:
+                update dp table with incremented value
+            else:
+                update dp table with the maximum value from previous entries
+
+    return LCS length  # Return the length of the longest common subsequence
+```
+
+This version emphasizes the steps taken in each algorithm without delving into specific code details, making it easier to focus on the high-level logic. Let me know if this works for you or if you need further adjustments
