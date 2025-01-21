@@ -184,3 +184,64 @@ Slavery existed in various forms in ancient India, although it was different fro
 - Ancient texts like the *Manusmriti* mention regulations regarding the treatment of slaves, indicating their legal status within society.
 - Although slavery was present, it was often regulated to prevent excessive abuse.
 - The status and treatment of slaves varied depending on the region, period, and the specific duties they performed.
+
+
+
+```bash
+Origin of State and Theories
+├── Evolutionary Theory
+├── Force Theory
+├── Mystical Theory
+└── Contract Theory
+
+Stages of State Formation
+
+Kingship
+
+Council of Ministers
+
+Political Ideas
+
+Conditions of Welfare Societies
+
+The Seven Limbs of the State
+├── Swami (Ruler)
+├── Amatya (Ministers)
+├── Janapada (Territory)
+├── Durga (Fort)
+├── Kosha (Treasury)
+├── Danda (Law and Order)
+└── Mitra (Allies)
+
+Society in Ancient India and Purusharthas
+├── Dharma
+├── Artha
+├── Kaama
+└── Moksha
+
+Varna and Ashrama Stages of Life
+
+Ashrama (Stages of Life in Indian Philosophy)
+├── Brahmacharyashrama (Studentship)
+├── Grihasthashrama (Householder)
+├── Vanaprasthashrama (Retirement)
+└── Sanyashrama (Renunciation)
+
+Marriage in Ancient India
+├── Brahma Vivah
+├── Daiva Vivah
+├── Arsha Vivah
+├── Prajapatya Vivah
+├── Gandharva Vivah
+├── Asura Vivah
+├── Rakshasa Vivah
+└── Paishacha Vivah
+
+Gender Category and Four Class Classification
+
+Representation of Women and Challenges
+├── Historical Traditions
+└── Challenges Faced by Women
+
+Slavery
+```
