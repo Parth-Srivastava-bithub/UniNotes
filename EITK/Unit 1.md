@@ -1,5 +1,8 @@
 # Unit 1
 
+![Unit 1 EITK-Unit 1 EITK](https://github.com/user-attachments/assets/2fa1ef2f-1d20-4aee-b4a8-df989b2048d3)
+
+
 ### **Origin of State and Theories**
 1. **Evolutionary Theory**:
    - The state developed from the basic social units like family and extended into clans and tribes.
