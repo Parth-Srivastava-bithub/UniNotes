@@ -1,4 +1,4 @@
-### **Indian Religion**
+# **Indian Religion**
 
 Indian religion is a diverse and ancient spiritual tradition that encompasses a variety of beliefs, practices, and philosophies. It includes several major religions, each contributing to the rich cultural heritage of India.
 
