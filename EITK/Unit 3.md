@@ -555,4 +555,4 @@ Here’s a one-line explanation for each topic in Unit 3 without the ASCII struc
   - **Buddhism**: Focuses on meditation and the Eightfold Path to enlightenment.
   
   - **Jainism**: A path emphasizing non-violence, truth, and asceticism to attain spiritual liberation
-  - 
+  
