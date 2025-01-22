@@ -1,3 +1,8 @@
+## MindMap for whole unit
+
+![Evolution of Script and Language in India-Evolution of Script and Language in India](https://github.com/user-attachments/assets/3df65fe8-d6ac-4eb7-96b8-a1fee99aff07)
+
+
 ### **Evolution of Script and Language in India**
 
 The **evolution of script and language in India** refers to the gradual development and transformation of languages and writing systems throughout Indian history. Here's a breakdown:
