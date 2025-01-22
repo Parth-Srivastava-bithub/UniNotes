@@ -439,4 +439,4 @@ Here’s a one-line explanation for each topic, presented without the tree struc
 - **Urdu Language**: A blend of Persian, Arabic, and Turkish, known for its poetry (ghazals) and writers like Mir Taqi Mir and Allama Iqbal.
 
 - **Hindi Language**: Evolved from Vedic and Prakrit languages; notable writers include Premchand and Tulsidas, with a focus on social and national themes
-- 
+
