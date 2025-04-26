@@ -440,3 +440,374 @@ Cohesion is how **related** the functions within a module are. **High cohesion**
 
 ---
 
+
+### 🔁 **Cohesion vs Coupling**
+
+#### ✅ **Cohesion** (Internal bonding within a module)
+- **High Cohesion** = Module does one task well (e.g., `AuthenticationModule` just for login/auth).
+- **Types**: 
+  - *Functional* (best) – all elements contribute to a single task.
+  - *Sequential*, *Communicational*, *Procedural*, etc.
+- **Why it’s good**: Easier to maintain, test, and reuse.
+
+#### ❌ **Coupling** (How tightly modules depend on each other)
+- **Low Coupling** = Modules interact via clean interfaces, not tightly linked.
+- **Types**: 
+  - *Data* (good) – only data passed.
+  - *Control*, *Common*, *Content* (bad).
+- **Why it’s bad**: Tight coupling makes changes risky, hard to scale.
+
+🧠 **Goal**: High cohesion, low coupling = Clean, scalable software.
+
+---
+
+### 🏗️ **Design Strategies**
+
+#### 🔝 **Top-Down Design**
+- **Start** with overall system -> break into subsystems.
+- **Example**: Design full app structure before writing a single function.
+
+**Advantages**:
+- Easier to manage big systems.
+- Better understanding of final goal.
+
+**Disadvantages**:
+- Delayed coding.
+- Requires detailed planning first.
+
+#### 🔽 **Bottom-Up Design**
+- **Start** with small, reusable modules -> integrate into bigger system.
+- **Example**: First make a login module, then design the full auth system.
+
+**Advantages**:
+- Modules reusable across systems.
+- Early development possible.
+
+**Disadvantages**:
+- May lack overall structure in early stages.
+- Integration issues if not planned well.
+
+---
+
+### 📏 **Measurements in SE**
+- Help quantify software attributes (size, effort, complexity, etc.)
+
+Common ones:
+- **LOC (Lines of Code)** – Code size.
+- **Function Points** – Features provided.
+- **Cyclomatic Complexity** – Decision points in code.
+
+📌 Used for cost estimation, productivity, maintenance, etc.
+
+---
+
+### 📊 **Metrics in SE**
+- Measurable indicators used to evaluate and improve software.
+
+**Types**:
+- **Product metrics**: Code quality (bugs, size, performance).
+- **Process metrics**: Dev speed, efficiency.
+- **Project metrics**: Budget, effort, timelines.
+
+**Examples**:
+- Defect Density = Bugs / KLOC.
+- Code Coverage = % of code tested.
+- MTTR = Mean Time To Repair.
+
+🔧 Helps identify bottlenecks and improve software quality.
+
+---
+
+### 🧠 **Four Management Functions in SE**
+
+1. **Planning**  
+   - Define scope, goals, deadlines.  
+   - Tools: Gantt charts, Agile sprint planning.
+
+2. **Organizing**  
+   - Assign roles, resources, tools.  
+   - Example: Who handles frontend, backend, testing?
+
+3. **Controlling**  
+   - Track progress, compare with plan.  
+   - Techniques: Code reviews, status meetings.
+
+4. **Improving**  
+   - Analyze results, apply lessons learned.  
+   - Use feedback to enhance processes & team performance.
+
+---
+
+
+### 🧬 **Characteristics of Good Software Metrics**
+
+1. **Qualitative**
+   - Metrics should help evaluate *qualities* like reliability, maintainability, reusability, etc., not just quantity.
+   - For example: “Customer satisfaction score” is more qualitative than just counting lines of code.
+
+2. **Understandable**
+   - Everyone from devs to PMs should easily get what the metric means.
+   - A metric like *Cyclomatic Complexity = 15* should clearly signal: “This function is too complex, maybe refactor.”
+
+3. **Applicable**
+   - A good metric must fit the context.  
+   - Example: *Test coverage* is great during testing but useless during planning phase.
+
+4. **Respectable**
+   - Should be industry-trusted and validated by research or practice.
+   - Like Function Point Analysis (FPA), used globally for estimating project size.
+
+5. **Economical**
+   - Must not take huge effort or cost to calculate.
+   - Example: If calculating a metric needs 3 devs working full-time, it’s not worth it.
+
+6. **Language Independent**
+   - Metric should work across tech stacks.  
+   - Example: *Defect density* (bugs/KLOC) is valid whether code is in Java, Python, or C++.
+
+---
+
+### 🔄 **3 Types of Software Metrics**
+
+#### 1. **Product Metrics**
+   - Describe the quality of the product itself (the actual software).
+   - 📌 **Examples**:
+     - LOC (Lines of Code)
+     - Cyclomatic Complexity
+     - Number of classes/functions
+     - Defect density (bugs per 1000 LOC)
+     - Halstead Metrics
+
+#### 2. **Process Metrics**
+   - Focus on the **how** of software development — the process behind creating software.
+   - 📌 **Examples**:
+     - Time taken per task or feature
+     - Bug fix rate
+     - Review feedback cycle
+     - Number of builds per day (CI/CD)
+
+#### 3. **Project Metrics**
+   - Deal with the overall project management side — timelines, resources, team.
+   - 📌 **Examples**:
+     - Effort estimation (hours/days)
+     - Schedule variance (planned vs actual dates)
+     - Cost overrun
+     - Resource utilization
+
+---
+
+### ✅ **Advantages of Software Metrics**
+
+1. **Improves Planning** – Helps forecast project timelines and resources with data.
+2. **Better Decision Making** – Identify bottlenecks, refactor need, or testing gaps.
+3. **Track Progress & Quality** – Metrics show whether the codebase or team is improving.
+4. **Team Accountability** – Makes it easier to identify if something or someone is lagging behind.
+5. **Helps with Process Improvement** – Over time, helps build faster and better systems.
+
+---
+
+### ❌ **Disadvantages of Software Metrics**
+
+1. **Wrong Focus = Wrong Decisions**
+   - Focusing only on LOC may reward bloated code instead of clean code.
+
+2. **Misinterpretation**
+   - If management doesn’t understand metrics, they may misuse them.
+   - E.g., “Code coverage = 90% = perfect software” is a **myth**.
+
+3. **Demotivation**
+   - If used punitively, metrics can pressure devs and reduce creativity.
+
+4. **Overhead**
+   - Some metrics require tools, manual entry, and effort to maintain (especially in small teams).
+
+5. **False Sense of Control**
+   - Metrics might show green status while bugs are still lurking in user behavior or corner cases.
+
+---
+
+
+
+## 🧠 **1. Halstead’s Software Science**
+
+### 📜 **Statement (What it is)**
+Halstead proposed a way to measure software complexity based on the **number of operators and operands** in a program, not just lines of code.  
+The idea: More mental effort = more complex code = higher risk = harder to maintain.
+
+---
+
+### 🧮 **Basic Measures Used**
+He defines 4 **primitive quantities** from a codebase:
+
+1. `n₁` = Number of **distinct operators**  
+2. `n₂` = Number of **distinct operands**  
+3. `N₁` = **Total occurrences** of operators  
+4. `N₂` = **Total occurrences** of operands
+
+---
+
+### 📊 **Formulas (Derived Measures)**
+
+From the basic ones, we compute:
+
+- **Program Vocabulary**:  
+  `n = n₁ + n₂`
+
+- **Program Length**:  
+  `N = N₁ + N₂`
+
+- **Calculated Length (Estimated size)**:  
+  `N̂ = n₁ * log₂(n₁) + n₂ * log₂(n₂)`
+
+- **Volume (V)** – Actual size of implementation:  
+  `V = N * log₂(n)`
+
+- **Difficulty (D)** – How hard it is to write/understand:  
+  `D = (n₁ / 2) * (N₂ / n₂)`
+
+- **Effort (E)** – Mental effort to code:  
+  `E = D * V`
+
+- **Time Required to Program (T)**:  
+  `T = E / 18` (seconds) – Based on psychologist estimate of human processing rate
+
+- **Estimated Bugs (B)**:  
+  `B = V / 3000`
+
+---
+
+### ✅ **Advantages**
+- Language-independent (pure math on tokens)  
+- Predicts effort, errors, time  
+- Helps in maintenance planning  
+- Great for embedded, mission-critical systems
+
+---
+
+### ❌ **Disadvantages**
+- Assumes linear relationship between tokens and difficulty  
+- Doesn’t capture code quality or structure  
+- Hard to calculate manually for large programs  
+- Ignores comments, logic flow, and readability
+
+---
+
+## 📏 **2. Function Point Based Measures**
+
+### 📌 **What is it?**
+Function Points measure the functionality delivered to the user — independent of programming language, size of code, or tools used.  
+Focus is on *what the software does*, not how.
+
+---
+
+### 📚 **Main Components (Countable Elements)**
+1. **External Inputs (EI)** – User input into the system  
+2. **External Outputs (EO)** – Output sent to the user  
+3. **External Inquiries (EQ)** – Requests needing input and output  
+4. **Internal Logical Files (ILF)** – Internal DB/files used  
+5. **External Interface Files (EIF)** – Shared files from other systems
+
+Each component is given a weight (Low/Avg/High), and we sum all for **Unadjusted Function Points (UFP)**.
+
+---
+
+### ➕ **Advantages**
+- **Language-independent** and usable in early design phase  
+- **Focuses on user perspective** — more meaningful to clients  
+- Good for **estimating project effort and cost**  
+- Great for **maintenance and enhancement estimation**
+
+---
+
+### ➖ **Disadvantages**
+- Requires **experience & judgment** to estimate weightings  
+- Not suitable for **purely algorithmic programs** (like compilers, ML models)  
+- Can be **subjective** if not standardized properly  
+- Time-consuming compared to LOC
+
+---
+
+## 📐 **3. Measurement Parameters (Examples)**
+
+| Parameter | Example |
+|----------|--------|
+| LOC      | 2,000 lines of code |
+| Time     | 3 developer-months |
+| Defects  | 8 bugs per KLOC |
+| Coverage | 85% unit test coverage |
+| Complexity | Cyclomatic Complexity = 12 |
+| Function Points | 120 FP (high functionality) |
+
+---
+
+## 🔀 **4. Cyclomatic Complexity**
+
+### 🧩 **Need**
+- Measures the **decision complexity** of code — how many **independent paths** exist.
+- Higher complexity = harder to test, understand, and maintain.
+
+---
+
+### 🎯 **Objective**
+- Find the **minimum number of test cases** needed to test all logic paths.
+- Helps reduce risk of untested edge cases.
+- Shows if a function/module is becoming too complex.
+
+---
+
+### ⚙️ **Process (Steps to Calculate)**
+
+Let’s say we have a control flow graph (CFG):
+
+1. **Identify nodes and edges** (nodes = code blocks, edges = flow paths)
+2. Use the formula:  
+   `CC = E - N + 2P`  
+   Where:  
+   - `E` = number of edges  
+   - `N` = number of nodes  
+   - `P` = number of connected components (usually 1)
+
+OR (simpler):
+
+If you just count the number of **decision points** (if, while, for, case):  
+`CC = D + 1`
+
+---
+
+### 📋 **Example**
+
+```cpp
+int max(int a, int b, int c) {
+   if (a > b) {
+      if (a > c)
+         return a;
+      else
+         return c;
+   } else {
+      if (b > c)
+         return b;
+      else
+         return c;
+   }
+}
+```
+
+- There are **3 `if` statements** → CC = 3 + 1 = **4**
+- Meaning: 4 independent paths → 4 test cases needed to test all logic
+
+---
+
+### ✅ **Advantages**
+- Simple and quick
+- Directly maps to test case design
+- Helps identify overly complex code (CC > 10? REFACTOR IT!)
+
+---
+
+### ❌ **Disadvantages**
+- Doesn’t measure actual code quality
+- Only considers control flow, not data flow
+- Not very useful for declarative or functional programming
+
+---
+
